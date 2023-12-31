@@ -12,7 +12,11 @@ type LayoutProps = {
   drawer: Partial<DrawerProps>
 }
 
-export default function Layout({ title, children, drawer }: PropsWithChildren<LayoutProps>) {
+export default function Layout({
+  title,
+  children,
+  drawer,
+}: PropsWithChildren<LayoutProps>) {
   const { theme } = useSettings()
   const [sidebarVisible, setSitebarVisible] = useState(false)
   const toggleSidebarVisible = () => setSitebarVisible((current) => !current)

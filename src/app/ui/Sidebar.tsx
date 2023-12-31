@@ -1,7 +1,11 @@
 'use client'
 
 import { PropsWithChildren, ReactNode } from 'react'
-import { HomeIcon, WrenchScrewdriverIcon, InformationCircleIcon } from '@heroicons/react/24/outline'
+import {
+  HomeIcon,
+  WrenchScrewdriverIcon,
+  InformationCircleIcon,
+} from '@heroicons/react/24/outline'
 import { Menu } from 'react-daisyui'
 import ROUTES from '../lib/routes'
 import Link from 'next/link'

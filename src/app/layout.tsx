@@ -18,14 +18,16 @@ export const metadata: Metadata = {
   },
 }
 
-const devMode = process.env.NODE_ENV === 'development' && process.env.REACT_APP_DEV_MODE === 'true'
+const devMode =
+  process.env.NODE_ENV === 'development' &&
+  process.env.REACT_APP_DEV_MODE === 'true'
 
 const defaultAppSettings = {
   dev: devMode,
   theme: 'dark',
 }
 
-const DynamicLayout = dynamic(() => import('./ui/Layout'), { ssr: false, })
+const DynamicLayout = dynamic(() => import('./ui/Layout'), { ssr: false })
 
 export default function RootLayout({
   children,

@@ -1,6 +1,6 @@
 'use client'
 
-import appInfo from "../lib/app"
+import appInfo from '../lib/app'
 
 export default function Page() {
   return (
@@ -18,7 +18,10 @@ export default function Page() {
             </a>
           </li>
           <li>
-            <a className="link link-hover" href="https://daisyui.com/components">
+            <a
+              className="link link-hover"
+              href="https://daisyui.com/components"
+            >
               Daisy UI Components
             </a>
           </li>

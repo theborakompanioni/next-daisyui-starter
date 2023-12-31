@@ -118,7 +118,9 @@ export default function Page() {
       </div>
 
       <div className="mb-4 flex flex-col gap-2">
-        <h2 className="text-xl font-bold tracking-tighter">Developer Settings</h2>
+        <h2 className="text-xl font-bold tracking-tighter">
+          Developer Settings
+        </h2>
         <div className="flex gap-2">
           <div className="flex items-center">
             <Checkbox
@@ -128,7 +130,11 @@ export default function Page() {
             />
           </div>
           <div className="flex flex-col p-2">
-            <Form.Label htmlFor="developer-mode-checkbox" title="Enable Developer Mode" className="p-0" />
+            <Form.Label
+              htmlFor="developer-mode-checkbox"
+              title="Enable Developer Mode"
+              className="p-0"
+            />
             <span className="text-gray-500 dark:text-gray-300 text-xs font-normal">
               Append debug information to pages or console
             </span>

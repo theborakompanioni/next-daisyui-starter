@@ -9,6 +9,7 @@ import { Navbar as DaisyNavbar, Button, Menu } from 'react-daisyui'
 import ROUTES from '../lib/routes'
 import Link from 'next/link'
 import { Url } from 'next/dist/shared/lib/router/router'
+import Image from 'next/image'
 
 type NavbarProps = {
   title: ReactNode
@@ -56,7 +57,7 @@ export function Navbar({ title, toggleSidebar }: NavbarProps) {
               <Title to={ROUTES.index}>
                 <>
                   <div className="w-8 mr-2">
-                    <img src="logo192.png" alt="logo" />
+                    <Image src="logo192.png" alt="logo" width="32" height="32" />
                   </div>
                   {title}
                 </>
@@ -69,7 +70,7 @@ export function Navbar({ title, toggleSidebar }: NavbarProps) {
             <Title to={ROUTES.index}>
               <>
                 <div className="w-8 mr-2">
-                  <img src="logo192.png" alt="logo" />
+                  <Image src="logo192.png" alt="logo" width="32" height="32" />
                 </div>
                 {title}
               </>

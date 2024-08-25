@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "serve": "npx serve dist/",
     "format": "prettier --write --no-error-on-unmatched-pattern 'src/**/*.{ts,tsx,json,css,md}'"
   },
   "dependencies": {

@@ -4,9 +4,7 @@ const nextConfig = {
 
     // Needed when using `output := 'export'` to disable the Image Optimization API
     // Read more: https://nextjs.org/docs/messages/export-image-api 
-    images: { unoptimized: true }, 
-
-    distDir: 'dist',
+    images: { unoptimized: true },
 
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     // trailingSlash: true,

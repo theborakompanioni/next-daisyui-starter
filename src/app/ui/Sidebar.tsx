@@ -22,7 +22,7 @@ export function Sidebar({ title, children }: PropsWithChildren<SidebarProps>) {
         <Menu.Item>
           <Link href={ROUTES.index}>
             <HomeIcon className="w-6 h-6" />
-            Index
+            Home
           </Link>
         </Menu.Item>
         <Menu.Item>

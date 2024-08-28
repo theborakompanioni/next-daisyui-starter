@@ -11,14 +11,14 @@ export function Footer() {
         <div>
           <DaisyFooter.Title>Services</DaisyFooter.Title>
           <Link className="link link-hover" href={ROUTES.index}>
-            Index
+            Home
           </Link>
           <Link className="link link-hover" href={ROUTES.settings}>
             Settings
           </Link>
         </div>
         <div>
-          <DaisyFooter.Title>Company</DaisyFooter.Title>
+          <DaisyFooter.Title>More</DaisyFooter.Title>
           <Link className="link link-hover" href={ROUTES.about}>
             About
           </Link>

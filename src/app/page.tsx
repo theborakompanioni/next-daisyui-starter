@@ -1,6 +1,7 @@
 'use client'
 
-import { Button, Divider, Hero } from 'react-daisyui'
+import { Divider, Hero } from 'react-daisyui'
+import Link from 'next/link'
 import ROUTES from './lib/routes'
 
 export default function Home() {
@@ -15,9 +16,12 @@ export default function Home() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
 
-            <Button color="primary" tag="a" href={ROUTES.about}>
+            <Link
+              className="btn btn-primary btn-lg hover:no-underline"
+              href={ROUTES.about}
+            >
               Get Started
-            </Button>
+            </Link>
           </div>
         </Hero.Content>
       </Hero>

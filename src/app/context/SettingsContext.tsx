@@ -1,6 +1,5 @@
 'use client'
 
-import { Reducer } from 'react'
 import {
   ProviderProps,
   createContext,
@@ -44,9 +43,7 @@ const SettingsProvider = ({
   value: { defaultValues },
   children,
 }: ProviderProps<SettingsProviderProps>) => {
-  const [settings, dispatch] = useReducer<
-    Reducer<AppSettings, Partial<AppSettings>>
-  >(
+  const [settings, dispatch] = useReducer(
     settingsReducer,
     Object.assign(
       {},

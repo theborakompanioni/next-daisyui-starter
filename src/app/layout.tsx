@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import { Inter } from 'next/font/google'
+import Layout from './ui/Layout'
 import { SettingsProvider } from './context/SettingsContext'
 import appInfo from './lib/app'
 
@@ -26,8 +26,6 @@ const defaultAppSettings = {
   theme: 'dark',
 }
 
-const DynamicLayout = dynamic(() => import('./ui/Layout'), { ssr: false })
-
 export default function RootLayout({
   children,
 }: {
@@ -37,9 +35,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <SettingsProvider value={{ defaultValues: defaultAppSettings }}>
-          <DynamicLayout title={<>{metadata.title}</>} drawer={{}}>
+          <Layout title={<>{metadata.title}</>} drawer={{}}>
             {children}
-          </DynamicLayout>
+          </Layout>
         </SettingsProvider>
       </body>
     </html>

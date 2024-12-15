@@ -22,7 +22,7 @@ export default function Layout({
   const toggleSidebarVisible = () => setSitebarVisible((current) => !current)
 
   return (
-    <Theme dataTheme={theme || 'dark'}>
+    <Theme dataTheme={theme || 'dark'} suppressHydrationWarning>
       <Drawer
         {...drawer}
         side={<Sidebar title={title} />}

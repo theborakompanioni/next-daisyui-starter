@@ -53,6 +53,7 @@ function ThemeItem({ dataTheme, selected, onClick }: ThemeItemProps) {
         tabIndex={0}
         onClick={() => onClick(dataTheme)}
         className="border-base-content/20 hover:border-base-content/40 outline-base-content  rounded-lg  overflow-hidden border outline-2 outline-offset-2"
+        suppressHydrationWarning
       >
         <div className="grid grid-cols-5 grid-rows-3">
           <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>
